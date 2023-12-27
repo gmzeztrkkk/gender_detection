@@ -1,0 +1,8 @@
+wandb
+opencv-python==4.8.1.78
+insightface==0.7.3
+torch==2.1.2+cu118 
+torchaudio==2.1.2+cu118 
+torchvision ==0.16.2+cu118
+onnxruntime==1.16.3
+gradio==4.12.0
