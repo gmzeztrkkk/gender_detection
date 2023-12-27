@@ -17,7 +17,8 @@ To run this project locally, follow these steps:
 git clone https://github.com/gmzeztrkkk/gender_detection.git
 ```
 - [Gender Models Link](https://drive.google.com/drive/folders/1XanusRqS4VD_Jv5-ob7xegieg8LVNMdy?usp=sharing)
-
+   
+- Copy the models into the models folder.   The use of this model is recommended(models/gender_ResNet18_2.pth)
 ## 2. Navigate to the project directory:
 
 ```bash
@@ -38,7 +39,7 @@ $ python inference.py --input test_img/1037.png --gender_model models/gender_Res
 
 ## 5. Gradio
 ```bash
-python app.py --device cuda:0
+python app.py --device cuda:0 --gender_model models/gender_ResNet18_2.pth
 ```
 
 ## 6. Train graphics
