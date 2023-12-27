@@ -14,14 +14,14 @@ To run this project locally, follow these steps:
 
 ## 1. Clone the repository and Download models:
 ```bash
-git clone https://github.com/<kullanıcı_adı>/<repo_adı>.git
+git clone https://github.com/gmzeztrkkk/gender_detection.git
 ```
 - [Gender Models Link](https://drive.google.com/drive/folders/1XanusRqS4VD_Jv5-ob7xegieg8LVNMdy?usp=sharing)
 
 ## 2. Navigate to the project directory:
 
 ```bash
-cd your_repository_name
+cd gender_detection
 ```
 
 ## 3. Create a virtual environment and Install the required libraries:
@@ -56,8 +56,6 @@ python app.py --device cuda:0
 ![Image 1](graphics/gender_Resnet18_2_0.png)
 
 ![Image 1](graphics/gender_Resnet18_2_1.png)
-
-
 
 
 
