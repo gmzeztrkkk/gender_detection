@@ -33,8 +33,13 @@ pip install -r requirements.txt
 ```
 
 ## 4. Inference
+
+- This repository also operates in real-time. If you set the input to 0, it will connect to the webcam. You can provide either a video or an image as input.
 ```bash
-$ python inference.py --input test_img/1037.png --gender_model models/gender_ResNet18_2.pth  --device cuda:0 
+python inference.py --input test_img/1037.png --gender_model models/gender_ResNet18_2.pth  --device cuda:0 
+python inference.py --input 0 --gender_model models/gender_ResNet18_2.pth  --device cuda:0 
+python inference.py --input x.mp4 --gender_model models/gender_ResNet18_2.pth  --device cuda:0 
+
 ```
 
 ## 5. Gradio
@@ -46,13 +51,13 @@ python app.py --device cuda:0 --gender_model models/gender_ResNet18_2.pth
 
 - WandB has been used for monitoring and visualizing training graphs.
 
-### 1- "models/gender_ResNet18_3.pth"
+### 6.1- "models/gender_ResNet18_3.pth"
 ![Image 1](graphics/gender_Resnet18_3_0.png)
 
 ![Image 1](graphics/gender_Resnet18_3_1.png)
 
 
-### 2- "models/gender_ResNet18_2.pth"
+### 6.2- "models/gender_ResNet18_2.pth"
 
 ![Image 1](graphics/gender_Resnet18_2_0.png)
 
@@ -63,7 +68,7 @@ python app.py --device cuda:0 --gender_model models/gender_ResNet18_2.pth
 
 ## Results
 
-Below are some examples of the project in action:
+Below are some examples of the project in action (models/gender_ResNet18_2.pth):
 
 
 ![Image 1](test_img/test1.png)
